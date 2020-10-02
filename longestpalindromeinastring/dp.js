@@ -14,6 +14,7 @@ const longestPalindrome = (s) => {
   for (let i = 0; i < n; i++) {
     const j = i;
     dp[i][j] = true;
+    maxLength = 1;
   }
   for (let i = 0; i < n - 1; i++) {
     if (s[i] === s[i + 1]) {
